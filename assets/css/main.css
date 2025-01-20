@@ -3242,7 +3242,7 @@ input, select, textarea {
 	margin-bottom: 0;
 	list-style: none;
 	padding-left: 0;
-	padding-right: 1em;
+	padding-right: 0.40em;
 }
 
 #nav li {
@@ -3260,7 +3260,7 @@ input, select, textarea {
 	border-radius: 20px; /* Rounded corners for cuteness */
 	height: 2.5em;
 	line-height: 2.5em;
-	padding: 0 1.5em;
+	padding: 0 1.20em;
 	/* background: rgba(255, 255, 255, 0.2); Soft background */
 	border: none; /* Remove lines */
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
