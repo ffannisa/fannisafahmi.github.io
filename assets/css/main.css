@@ -3224,10 +3224,9 @@ input, select, textarea {
 
 
 /* Nav */
-
 #nav {
-	background-color: #282828;
-	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: right;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -3236,57 +3235,59 @@ input, select, textarea {
 	cursor: default;
 	height: 3.5em;
 	line-height: 3.5em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
 }
 
-	#nav ul {
-		margin-bottom: 0;
-		list-style: none;
-		padding-left: 0;
-	}
+#nav ul {
+	margin-bottom: 0;
+	list-style: none;
+	padding-left: 0;
+	padding-right: 1em;
+}
 
-	#nav li {
-		display: inline-block;
-		padding-left: 0;
-	}
+#nav li {
+	display: inline-block;
+	padding-left: 0;
+}
 
-	#nav a {
-		-moz-transition: background-color .2s ease-in-out;
-		-webkit-transition: background-color .2s ease-in-out;
-		-ms-transition: background-color .2s ease-in-out;
-		transition: background-color .2s ease-in-out;
-		position: relative;
-		display: block;
-		color: #fff;
-		text-decoration: none;
-		outline: 0;
-		font-weight: 600;
-		border-radius: 8px;
-		color: #fff;
-		height: 2.5em;
-		line-height: 2.5em;
-		padding: 0 1.25em;
-	}
+#nav a {
+	transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+	position: relative;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 20px; /* Rounded corners for cuteness */
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 1.5em;
+	/* background: rgba(255, 255, 255, 0.2); Soft background */
+	border: none; /* Remove lines */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
-		#nav a:hover {
-			color: #fff !important;
-			background: #383838;
-		}
+#nav a:hover {
+	color: #fff !important;
+	background: #8fc6f0; /* Cute hover color */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+	transform: scale(1.05); /* Slight scaling effect */
+}
 
-		#nav a.active {
-			background: #484848;
-		}
+#nav a.active {
+	background: #8fc6f0; /* Active state color */
+}
 
-			#nav a.active:before {
-				content: '';
-				display: block;
-				position: absolute;
-				bottom: -0.6em;
-				left: 50%;
-				margin-left: -0.75em;
-				border-left: solid 0.75em transparent;
-				border-right: solid 0.75em transparent;
-				border-top: solid 0.6em #282828;
-			}
+#nav a.active:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -0.6em;
+	left: 50%;
+	margin-left: -0.75em;
+	border-left: solid 0.75em transparent;
+	border-right: solid 0.75em transparent;
+	border-top: solid 0.6em #8fc6f0;
+}
 
 /* Articles */
 
